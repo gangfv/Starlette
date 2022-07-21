@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Support</title>
+</head>
+<body>
+<h1>Ваши сообщения</h1>
+{% for res in results %}
+<p>
+    {{ res.username }} - {{ res.email }}<br>
+    {{res.message}}<br>
+</p>
+{% endfor %}
+</body>
+</html>
